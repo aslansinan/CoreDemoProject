@@ -27,4 +27,8 @@
       </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Shared\Components\WriterLastBlog\Default.cshtml" />
+    </ItemGroup>
+
 </Project>

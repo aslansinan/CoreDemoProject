@@ -14,5 +14,7 @@ public class Blog
     public bool BlogStatus  { get; set; }
     public int CategoryID { get; set; }
     public Category Category { get; set; }
+    public int WriterID { get; set; }
+    public Writer writer { get; set; }
     public List<Comment> Comments { get; set; }
 }
