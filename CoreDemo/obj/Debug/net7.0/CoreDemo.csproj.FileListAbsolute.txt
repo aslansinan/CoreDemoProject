@@ -79,3 +79,7 @@ C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\BusinessLayer.pdb
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\DataAccessLayer.pdb
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\EntityLayer.pdb
 C:\projeler\CoreDemo\CoreDemo\obj\Debug\net7.0\CoreDemo.csproj.CopyComplete
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\FluentValidation.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\projeler\CoreDemo\CoreDemo\obj\Debug\net7.0\CoreDemo.MvcApplicationPartsAssemblyInfo.cs
