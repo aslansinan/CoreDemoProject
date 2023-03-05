@@ -10,12 +10,12 @@ public class AboutController : Controller
 
     public IActionResult index()
     {
-        return View();
+        var values = am.GetList();
+        return View(values);
     }
 
     public PartialViewResult SocialMediaAbout()
     {
-        var values = am.GetList();
-        return PartialView(values);
+        return PartialView();
     }
 }
