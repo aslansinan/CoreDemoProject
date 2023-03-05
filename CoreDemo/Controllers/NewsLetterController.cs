@@ -19,6 +19,7 @@ public class NewsLetterController : Controller
     {
         p.MailStatus = true;
         nm.NewsLetterAdd(p);
-        return PartialView(p);
+        Response.Redirect("/Blog/BlogReadAll/" + 1);
+        return PartialView();
     }
 }   
