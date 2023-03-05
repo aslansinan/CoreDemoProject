@@ -2,6 +2,7 @@
 
 namespace DataAccessLayer.Abstract;
 
-public interface IWriterDal : IGenericDal<Writer>
+public interface INewsletterDal : IGenericDal<NewsLetter>
 {
+    
 }
