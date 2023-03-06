@@ -5,6 +5,7 @@ namespace CoreDemo.Controllers;
 [Authorize]
 public class WriterController : Controller
 {
+    [AllowAnonymous]
     public IActionResult index()
     {
         return View();
