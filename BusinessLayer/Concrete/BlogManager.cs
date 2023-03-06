@@ -32,7 +32,12 @@ public class BlogManager:IBlogService
     public List<Blog> GetList()
     {
         return _blogDal.GetListAll();
-    } 
+    }
+
+    public List<Blog> GetLast3Blog()
+    {
+        return _blogDal.GetListAll().Take(3).ToList();
+    }
 
     public Blog GetById(int id)
     {
