@@ -126,6 +126,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/projeler/CoreDemo/CoreDemo/Views/Writer/WriterMail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXFdyaXRlck1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/projeler/CoreDemo/CoreDemo/Views/Writer/WriterProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXFdyaXRlclByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
