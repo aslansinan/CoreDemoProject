@@ -34,7 +34,7 @@ public class WriterManager : IWriterService
         throw new NotImplementedException();
     }
 
-    public Writer GetById(int id)
+    public Writer TGetById(int id)
     {
         throw new NotImplementedException();
     }

@@ -33,7 +33,7 @@ public class CategoryManager : ICategoryService
         return _categoryDal.GetListAll();
     }
 
-    public Category GetById(int id)
+    public Category TGetById(int id)
     {
         return _categoryDal.GetByID(id);
     }

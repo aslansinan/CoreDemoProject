@@ -34,7 +34,7 @@ public class NewsLetterManager : INewsLetterService
         throw new NotImplementedException();
     }
 
-    public NewsLetter GetById(int id)
+    public NewsLetter TGetById(int id)
     {
         throw new NotImplementedException();
     }

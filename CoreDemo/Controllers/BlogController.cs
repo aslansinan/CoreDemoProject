@@ -70,4 +70,11 @@ public class BlogController : Controller
 
         return View();
     }
+
+    public IActionResult DeleteBlog(int id)
+    {
+        var blogvalue = bm.TGetById(id);
+        bm.TDelete(blogvalue);
+        return RedirectToAction("BlogListByWriter");
+    }
 }

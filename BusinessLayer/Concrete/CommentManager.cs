@@ -43,7 +43,7 @@ public class CommentManager :ICommentService
         throw new NotImplementedException();
     }
 
-    public Comment GetById(int id)
+    public Comment TGetById(int id)
     {
         throw new NotImplementedException();
     }

@@ -34,7 +34,7 @@ public class AboutManager : IAboutService
         return _aboutDal.GetListAll();
     }
 
-    public About GetById(int id)
+    public About TGetById(int id)
     {
         throw new NotImplementedException();
     }

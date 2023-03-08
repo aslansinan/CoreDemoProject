@@ -26,7 +26,7 @@ public class BlogManager : IBlogService
 
     public void TDelete(Blog t)
     {
-        throw new NotImplementedException();
+        _blogDal.Delete(t);
     }
 
     public void TUpdate(Blog t)
@@ -44,7 +44,7 @@ public class BlogManager : IBlogService
         return _blogDal.GetListAll().Take(3).ToList();
     }
 
-    public Blog GetById(int id)
+    public Blog TGetById(int id)
     {
         return _blogDal.GetByID(id);
     }
