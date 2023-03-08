@@ -29,7 +29,7 @@ public class BlogController : Controller
 
     public IActionResult BlogListByWriter()
     {
-        var values = bm.GetBlogListWithWriter(1);
+        var values = bm.GetListWithCategoryByWriterBm(1);
         return View(values);
     }
 
