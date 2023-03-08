@@ -2,7 +2,7 @@
 
 namespace BusinessLayer.Abstract;
 
-public interface ICommentService
+public interface ICommentService : IGenericService<Comment>
 {
     void CommentAdd(Comment comment);
     //void CategoryDelete(Category category);

@@ -5,10 +5,12 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreDemo.Controllers;
+
 [AllowAnonymous]
 public class BlogController : Controller
 {
     private BlogManager bm = new BlogManager(new EfBlogRepository());
+
     public IActionResult index()
     {
         var values = bm.GetBlogListWithCategory();
@@ -19,6 +21,12 @@ public class BlogController : Controller
     {
         ViewBag.i = id;
         var values = bm.GetBlogById(id);
+        return View(values);
+    }
+
+    public IActionResult BlogListByWriter()
+    {
+        var values = bm.GetBlogListWithWriter(1);
         return View(values);
     }
 }

@@ -25,7 +25,7 @@ public class RegisterController : Controller
         {
             p.WriterStatus = true;
             p.WriterAbout = "Deneme Test";
-            wm.WriterAdd(p);
+            wm.TAdd(p);
             return RedirectToAction("index","Blog");
         }
         else

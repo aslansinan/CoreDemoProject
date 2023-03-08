@@ -6,7 +6,7 @@ using EntityLayer.Concrete;
 
 namespace BusinessLayer.Concrete;
 
-public class BlogManager:IBlogService
+public class BlogManager : IBlogService
 {
     IBlogDal _blogDal;
 
@@ -14,19 +14,19 @@ public class BlogManager:IBlogService
     {
         _blogDal = blogDal;
     }
-    public void BlogAdd(Blog blog)
+    public void TAdd(Blog t)
     {
-        _blogDal.Insert(blog);
+        throw new NotImplementedException();
     }
 
-    public void BlogDelete(Blog blog)
+    public void TDelete(Blog t)
     {
-        _blogDal.Delete(blog);
+        throw new NotImplementedException();
     }
 
-    public void BlogUpdate(Blog blog)
+    public void TUpdate(Blog t)
     {
-        _blogDal.Update(blog);
+        throw new NotImplementedException();
     }
 
     public List<Blog> GetList()

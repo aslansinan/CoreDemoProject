@@ -14,9 +14,28 @@ public class NewsLetterManager : INewsLetterService
         _newsletterDal = newsletterDal;
     }
 
-
-    public void NewsLetterAdd(NewsLetter newsLetter)
+    public void TAdd(NewsLetter t)
     {
-        _newsletterDal.Insert(newsLetter);
+        _newsletterDal.Insert(t);
+    }
+
+    public void TDelete(NewsLetter t)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void TUpdate(NewsLetter t)
+    {
+        throw new NotImplementedException();
+    }
+
+    public List<NewsLetter> GetList()
+    {
+        throw new NotImplementedException();
+    }
+
+    public NewsLetter GetById(int id)
+    {
+        throw new NotImplementedException();
     }
 }

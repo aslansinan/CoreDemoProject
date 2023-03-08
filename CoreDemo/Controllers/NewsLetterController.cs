@@ -18,7 +18,7 @@ public class NewsLetterController : Controller
     public PartialViewResult SubscribeMail(NewsLetter p)
     {
         p.MailStatus = true;
-        nm.NewsLetterAdd(p);
+        nm.TAdd(p);
         Response.Redirect("/Blog/BlogReadAll/" + 1);
         return PartialView();
     }

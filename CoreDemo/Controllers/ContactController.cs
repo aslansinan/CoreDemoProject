@@ -20,7 +20,7 @@ public class ContactController : Controller
     {
         p.ContactDate = DateTime.Parse(DateTime.Now.ToShortDateString());
         p.ContactStatus = true;
-        cm.ContactAdd(p);
+        cm.TAdd(p);
         return RedirectToAction("index", "Blog");
         return View();
     }

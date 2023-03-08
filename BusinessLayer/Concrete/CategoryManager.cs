@@ -1,12 +1,10 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
-using DataAccessLayer.EntityFramework;
-using DataAccessLayer.Repositories;
 using EntityLayer.Concrete;
 
 namespace BusinessLayer.Concrete;
 
-public class CategoryManager:ICategoryService
+public class CategoryManager : ICategoryService
 {
     ICategoryDal _categoryDal;
 
@@ -14,19 +12,20 @@ public class CategoryManager:ICategoryService
     {
         _categoryDal = categoryDal;
     }
-    public void CategoryAdd(Category category)
+
+    public void TAdd(Category t)
     {
-        _categoryDal.Insert(category);
+        _categoryDal.Insert(t);
     }
 
-    public void CategoryDelete(Category category)
+    public void TDelete(Category t)
     {
-        _categoryDal.Delete(category);
+        _categoryDal.Delete(t);
     }
 
-    public void CategoryUpdate(Category category)
+    public void TUpdate(Category t)
     {
-        _categoryDal.Update(category);
+        _categoryDal.Update(t);
     }
 
     public List<Category> GetList()
