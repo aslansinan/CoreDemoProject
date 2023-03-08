@@ -5,6 +5,7 @@ using EntityLayer.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CoreDemo.Controllers;
 
@@ -31,11 +32,21 @@ public class BlogController : Controller
         var values = bm.GetBlogListWithWriter(1);
         return View(values);
     }
+
     [HttpGet]
     public IActionResult BlogAdd()
     {
+        CategoryManager cm = new CategoryManager(new EfCategoryRepository());
+        List<SelectListItem> categoryvalues = (from x in cm.GetList()
+            select new SelectListItem
+            {
+                Text = x.CategoryName,
+                Value = x.CategoryID.ToString()
+            }).ToList();
+        ViewBag.cv = categoryvalues;
         return View();
     }
+
     [HttpPost]
     public IActionResult BlogAdd(Blog p)
     {
@@ -47,15 +58,16 @@ public class BlogController : Controller
             p.BlogCreateDate = DateTime.Parse(DateTime.Now.ToShortDateString());
             p.WriterID = 1;
             bm.TAdd(p);
-            return RedirectToAction("BlogListByWriter","Blog");
+            return RedirectToAction("BlogListByWriter", "Blog");
         }
         else
         {
             foreach (var item in results.Errors)
             {
-                ModelState.AddModelError(item.PropertyName,item.ErrorMessage);
+                ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
             }
         }
+
         return View();
     }
 }
