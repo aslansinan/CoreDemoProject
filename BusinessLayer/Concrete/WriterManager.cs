@@ -38,4 +38,9 @@ public class WriterManager : IWriterService
     {
         throw new NotImplementedException();
     }
+
+    public List<Writer> GetWriterById(int id)
+    {
+        return _writerDal.GetListAll(x => x.WriterID == id);
+    }
 }
