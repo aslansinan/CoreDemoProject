@@ -31,4 +31,8 @@
       <AdditionalFiles Include="Views\Shared\Components\WriterLastBlog\Default.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\writer\WriterImageFiles" />
+    </ItemGroup>
+
 </Project>

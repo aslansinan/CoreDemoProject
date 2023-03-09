@@ -26,7 +26,7 @@ public class WriterManager : IWriterService
 
     public void TUpdate(Writer t)
     {
-        throw new NotImplementedException();
+        _writerDal.Update(t);
     }
 
     public List<Writer> GetList()
