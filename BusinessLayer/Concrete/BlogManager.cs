@@ -31,7 +31,7 @@ public class BlogManager : IBlogService
 
     public void TUpdate(Blog t)
     {
-        throw new NotImplementedException();
+        _blogDal.Update(t);
     }
 
     public List<Blog> GetList()
