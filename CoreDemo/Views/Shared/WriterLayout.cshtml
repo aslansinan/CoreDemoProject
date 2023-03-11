@@ -69,15 +69,15 @@
                         <i class="mdi mdi-email-outline"></i>
                         <span class="count-symbol bg-warning"></span>
                     </a>
+                        @await Component.InvokeAsync("WriterMessageNotification")
                 </li>
-                @await Component.InvokeAsync("WriterMessageNotification");
                 <li class="nav-item dropdown">
                     <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
                         <i class="mdi mdi-bell-outline"></i>
                         <span class="count-symbol bg-danger"></span>
                     </a>
+                @await Component.InvokeAsync("WriterNotification")
                 </li>
-                @await Component.InvokeAsync("WriterNotification");
                 <li class="nav-item nav-logout d-none d-lg-block">
                     <a class="nav-link" href="#">
                         <i class="mdi mdi-power"></i>
