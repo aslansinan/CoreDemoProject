@@ -243,6 +243,41 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("NewsLetters");
                 });
 
+            modelBuilder.Entity("EntityLayer.Concrete.Notfication", b =>
+                {
+                    b.Property<int>("NotficationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NotficationId"));
+
+                    b.Property<string>("NotficationColor")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("NotficationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NotficationDetails")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("NotficationStatus")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("NotficationType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NotficationTypeSymbol")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("NotficationId");
+
+                    b.ToTable("Notfications");
+                });
+
             modelBuilder.Entity("EntityLayer.Concrete.Writer", b =>
                 {
                     b.Property<int>("WriterID")

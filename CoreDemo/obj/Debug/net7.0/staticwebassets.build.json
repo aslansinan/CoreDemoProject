@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rxEkw9xUzruaPs8zXz0pmuSTBZFIJTqTtMnrVJNXmPM=",
+  "Hash": "KeEUUESRY+jXBlTgLFFa4xnR3V+mPgtwx5o+B+z+Q9E=",
   "Source": "CoreDemo",
   "BasePath": "_content/CoreDemo",
   "Mode": "Default",
@@ -4979,6 +4979,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\writer\\screenshot.jpg"
+    },
+    {
+      "Identity": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\WriterImageFiles\\2749c038-80c9-407b-8f6b-473ec1db38c7.jpeg",
+      "SourceId": "CoreDemo",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\",
+      "BasePath": "_content/CoreDemo",
+      "RelativePath": "writer/WriterImageFiles/2749c038-80c9-407b-8f6b-473ec1db38c7.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\writer\\WriterImageFiles\\2749c038-80c9-407b-8f6b-473ec1db38c7.jpeg"
     }
   ]
 }
