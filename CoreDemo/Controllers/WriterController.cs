@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Concrete;
 using BusinessLayer.ValidationRules;
 using CoreDemo.Models;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
@@ -40,14 +41,16 @@ public class WriterController : Controller
         return PartialView();
     }
 
-    [AllowAnonymous]
     [HttpGet]
     public IActionResult WriterEditProfile()
     {
-        var writervalues = _writerManager.TGetById(1);
+        Context context = new Context(); 
+        var userMail = User.Identity?.Name;
+        var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID)
+            .FirstOrDefault();
+        var writervalues = _writerManager.TGetById(writerId);
         return View(writervalues);
     }
-    [AllowAnonymous]
     [HttpPost]
     public IActionResult WriterEditProfile(Writer writer)
     {
