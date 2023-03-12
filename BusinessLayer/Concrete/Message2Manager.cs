@@ -35,7 +35,7 @@ public class Message2Manager : IMessage2Service
 
     public Message2 TGetById(int id)
     {
-        throw new NotImplementedException();
+        return _message2Dal.GetByID(id);
     }
 
     public List<Message2> GetInboxListByWriter(int id)
