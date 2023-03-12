@@ -9,6 +9,21 @@ public class Context: DbContext
     {
         optionsBuilder.UseSqlServer("server=.;database=CoreBlogDb;integrated security = true; Trust Server Certificate=true");
     }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Message2>() //İlişki
+            .HasOne(x => x.SenderUser)
+            .WithMany(y => y.WriterSender)
+            .HasForeignKey(z => z.SenderId)
+            .OnDelete(DeleteBehavior.ClientSetNull);
+
+        modelBuilder.Entity<Message2>()
+            .HasOne(x => x.ReceiverUser)
+            .WithMany(y => y.WriterReceiver)
+            .HasForeignKey(z => z.ReceiverId)
+            .OnDelete(DeleteBehavior.ClientSetNull);
+    }
     public DbSet<About> Abouts { get; set; }
     public DbSet<Blog> Blogs { get; set; }
     public DbSet<Category> Categories { get; set; }
@@ -19,4 +34,5 @@ public class Context: DbContext
     public DbSet<BlogRayting> BlogRaytings { get; set; }
     public DbSet<Notfication> Notfications { get; set; }
     public DbSet<Message> Messages { get; set; }
+    public DbSet<Message2> Message2s { get; set; }
 } 
