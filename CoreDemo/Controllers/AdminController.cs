@@ -8,4 +8,9 @@ public class AdminController : Controller
     {
         return View();
     }
+
+    public PartialViewResult AdminNavbarPartial()
+    {
+        return PartialView();
+    }
 }
