@@ -16,10 +16,7 @@ builder.Services.AddMvc(config =>
 builder.Services.AddMvc();
 builder.Services.AddAuthentication(
         CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(x =>
-    {
-        x.LoginPath = "/Login/index";
-    });
+    .AddCookie(x => { x.LoginPath = "/Login/index"; });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -30,14 +27,17 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1","?code={0}");
-app.UseHttpsRedirection();  
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthentication();
 app.UseRouting();
 
 app.UseAuthorization();
 
+app.MapControllerRoute(
+    name: "Admin",
+    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
