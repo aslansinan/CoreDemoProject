@@ -83,3 +83,6 @@ C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\FluentValidation.dll
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\FluentValidation.AspNetCore.dll
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\projeler\CoreDemo\CoreDemo\obj\Debug\net7.0\CoreDemo.MvcApplicationPartsAssemblyInfo.cs
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\JetBrains.Annotations.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\X.PagedList.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
