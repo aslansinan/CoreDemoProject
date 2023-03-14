@@ -1,6 +1,34 @@
-﻿@{
+﻿@using EntityLayer.Concrete
+@model List<Category>
+@{
     ViewData["Title"] = "Home Page";
     Layout = "AdminLayout";
 }
-
-<p>ders 90</p>
+<h1>Kategori Listesi</h1>
+<br/>
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Kategori Adı</th>
+        <th>Pasif Yap</th>
+        <th>Aktif Yap</th>
+        <th>Düzenle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryID </td>
+            <td>@item.CategoryName</td>
+            <td>
+                <a href="#" class="btn btn-primary">Pasif Yap</a>
+            </td>
+            <td>
+                <a href="#" class="btn btn-info">Aktif Yap</a>
+            </td>
+           
+            <td>
+                <a href="#" class="btn btn-success">Düzenle</a>
+            </td>
+        </tr>
+    }
+</table> 
