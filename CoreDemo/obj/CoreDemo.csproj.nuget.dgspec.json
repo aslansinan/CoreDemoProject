@@ -130,6 +130,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.100.3, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.5.1, )"
