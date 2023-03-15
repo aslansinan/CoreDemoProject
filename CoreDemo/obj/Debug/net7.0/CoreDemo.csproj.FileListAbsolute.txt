@@ -86,3 +86,10 @@ C:\projeler\CoreDemo\CoreDemo\obj\Debug\net7.0\CoreDemo.MvcApplicationPartsAssem
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\JetBrains.Annotations.dll
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\X.PagedList.dll
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\ClosedXML.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\DocumentFormat.OpenXml.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\ExcelNumberFormat.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\Irony.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\SixLabors.Fonts.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\System.IO.Packaging.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\XLParser.dll

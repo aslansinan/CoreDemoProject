@@ -3,7 +3,7 @@ using CoreDemo.Areas.Admin.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreDemo.Areas.Admin.Controllers;
-
+[Area("Admin")]
 public class BlogController : Controller
 {
     public IActionResult ExportStaticExcelBlogList()
@@ -26,7 +26,7 @@ public class BlogController : Controller
             {
                 workbook.SaveAs(stream);
                 var content = stream.ToArray();
-                return File(content, "application / vnd.openxmlformats - officedocument.spreadsheetml.sheet",
+                return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                     "Calisma1.xlsx");
             }
 
@@ -37,10 +37,15 @@ public class BlogController : Controller
     {
         List<BlogModel> _blog = new List<BlogModel>
         {
-            new BlogModel { ID = 1, BlogName = "Sinan Aslan Sayfasy" },
-            new BlogModel { ID = 2, BlogName = "Ali Kınık Sayfasy" },
-            new BlogModel { ID = 3, BlogName = "Serdar Ortaç Sayfasy" },
+            new BlogModel { ID = 1, BlogName = "Sinan Aslan Sayfası" },
+            new BlogModel { ID = 2, BlogName = "Ali Kınık Sayfası" },
+            new BlogModel { ID = 3, BlogName = "Serdar Ortaç Sayfası" },
         };
         return _blog;
+    }
+
+    public IActionResult BlogListExcel()
+    {
+        return View();
     }
 }
