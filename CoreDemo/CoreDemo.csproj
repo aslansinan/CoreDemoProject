@@ -31,6 +31,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <AdditionalFiles Include="Areas\Admin\Views\Shared\Components\statistic4\Default.cshtml" />
       <AdditionalFiles Include="Views\Shared\Components\WriterLastBlog\Default.cshtml" />
     </ItemGroup>
 
