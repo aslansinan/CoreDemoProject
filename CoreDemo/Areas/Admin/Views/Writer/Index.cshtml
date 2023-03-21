@@ -11,7 +11,7 @@
 </div>
 
 @section scripts
-{  
+{
     <script>
         $('#btngelist').click(function() {
           $.ajax({
@@ -20,9 +20,15 @@
             type: "Get",
             url : "/Admin/Writer/WriterList/",
             success: function (func){
-                console.log(func)
+                let w = jQuery.parseJSON(func)
+                let tablehtml = "<table class=table table-bordered> <tr> <th>Yazar Id </th> <th>Yazar Adı </th> </tr>";
+                $.each(w, (index, value) => {
+                    tablehtml +=`<tr><td>${value.Id}</td> <td>${value.Name}</td></tr>`
+                });
+                tablehtml += "</table>";
+                $("#writerlist").html(tablehtml);
                 }
           });
         });
-    </script>
+    </script> 
 }
