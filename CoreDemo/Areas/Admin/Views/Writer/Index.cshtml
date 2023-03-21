@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = "AdminLayout";
+}
+<h1>yazar ajax paneli</h1>
+<br />
+<button type="button" id="btngelist" class="btn btn-outline-primary">Yazar listesi</button>
+<br /><br />
+<div id="writerlist">
+    veriler
+</div>
+
+@section scripts
+{  
+    <script>
+        $('#btngelist').click(function() {
+          $.ajax({
+            contentType: "application/json",
+            dataType : "json",
+            type: "Get",
+            url : "/Admin/Writer/WriterList/",
+            success: function (func){
+                console.log(func)
+                }
+          });
+        });
+    </script>
+}
