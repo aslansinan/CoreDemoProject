@@ -5,9 +5,18 @@
 <h1>yazar ajax paneli</h1>
 <br />
 <button type="button" id="btngelist" class="btn btn-outline-primary">Yazar listesi</button>
+<button type="button" id="btngetbyıd" class="btn btn-outline-primary">Yazar Getir</button>
 <br /><br />
 <div id="writerlist">
-    veriler
+    <h5>Yazarlar</h5>
+</div>
+<br /><br />
+<div id="writerget">
+    <h5>Bir Yazar</h5>
+</div>
+<br /><br />
+<div>
+    <input type="text" id="id" class="form-control" placeholder="Yazar Id değerini girin"/>
 </div>
 
 @section scripts
@@ -30,5 +39,24 @@
                 }
           });
         });
-    </script> 
+        
+        $("#btngetbyıd").click(x=>{
+        let id = $("#id").val();
+        console.log(id)
+         $.ajax({
+            contentType: "application/json",
+            dataType : "json",
+            type: "Get",
+            url : "/Admin/Writer/GetWriterById/",
+            data: {id:id},
+            success: function (func){
+                let w = jQuery.parseJSON(func)
+                console.log(w)
+                let getvalue = `<table class=table table-bordered> <tr> <th>Yazar Id </th> <th>Yazar Adı </th> </tr><tr><td>${w.Id}</td><td>${w.Name}</td></tr></table>`;
+                
+                $("#writerget").html(getvalue);
+                }
+          });
+        })
+    </script>
 }

@@ -18,6 +18,12 @@ public class WriterController : Controller
         return Json(jsonWriters);
     }
 
+    public IActionResult GetWriterById(int id)
+    {
+        var findwriter = writers.FirstOrDefault(x => x.Id == id);
+        var jsonWriters = JsonConvert.SerializeObject(findwriter);
+        return Json(jsonWriters);
+    }
 
     public static List<WriterClass> writers = new List<WriterClass>()
     {
