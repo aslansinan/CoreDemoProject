@@ -7,6 +7,7 @@
 <button type="button" id="btngelist" class="btn btn-outline-primary">Yazar listesi</button>
 <button type="button" id="btngetbyıd" class="btn btn-outline-success">Yazar Getir</button>
 <button type="button" id="btnaddwriter" class="btn btn-outline-info">Yazar Ekle</button>
+<button type="button" id="btndeletewriter" class="btn btn-outline-danger">Yazar Sil</button>
 <br /><br />
 <div id="writerlist">
     <h5>Yazarlar</h5>
@@ -23,6 +24,10 @@
 <div>
     <input type="text" class="form-control" id="txtwriterid" placeholder="Yazar Id"/>
     <input type="text" class="form-control" id="txtwritername" placeholder="Yazar Adı"/>
+</div>
+<br /><br />
+<div>
+    <input type="text" id="writerid" class="form-control" placeholder="Silinecek Yazar Id"/>
 </div>
 @section scripts
 {
@@ -74,12 +79,24 @@
               url : "/Admin/Writer/AddWriter/",
               data: writer,
               success: function (func){
-                  let w = jQuery.parseJSON(func)
                   console.log(w)
                   let result = jQuery.parseJSON(func);
                   alert("Yazar Ekleme işlemi gerçekleşti");
                   }
             });
         })
+        
+        $('#btndeletewriter').click(x=> {
+          let id = $("#writerid").val();
+           $.ajax({
+                type: "Post",
+                url : "/Admin/Writer/DeleteWriter/"+ id,
+                dataType:"json",
+                success: function (func){
+                    alert("Yazar Silme işlemi gerçekleşti");
+                    }
+              });
+        })
+        
     </script>
 }
