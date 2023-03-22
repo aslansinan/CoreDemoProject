@@ -12,6 +12,14 @@ public class WriterController : Controller
         return View();
     }
 
+    [HttpPost]
+    public IActionResult AddWriter(WriterClass writerClass)
+    {
+        writers.Add(writerClass);
+        var jsonWriters = JsonConvert.SerializeObject(writerClass);
+        return Json(jsonWriters);
+    }
+
     public IActionResult WriterList()
     {
         var jsonWriters = JsonConvert.SerializeObject(writers);
