@@ -23,4 +23,54 @@ public class DefaultController : ControllerBase
         c.SaveChangesAsync();
         return Ok();
     }
+
+    [HttpGet("{id}")]
+    public IActionResult EmployeeGet(int id)
+    {
+        using var c = new Context();
+        var employee = c.Employees.Find(id);
+        if (employee== null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            return Ok(employee);
+        }
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult EmployeeDelete(int id)
+    {
+        using var c = new Context();
+        var employee = c.Employees.Find(id);
+        if (employee== null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            c.Remove(employee);
+            c.SaveChangesAsync();
+            return Ok();
+        }
+    }
+
+    [HttpPut]
+    public IActionResult EmployeeUpdate(Employee employee)
+    {
+        using var c = new Context();
+        var emp = c.Employees.Find(employee.Id);
+        if (emp== null)
+        {
+            return NotFound();
+        }
+        else
+        {
+            emp.Name = employee.Name;
+            c.Update(emp);
+            c.SaveChangesAsync();
+            return Ok();
+        }
+    }
 }
