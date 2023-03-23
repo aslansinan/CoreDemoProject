@@ -1,10 +1,16 @@
 ﻿using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Concrete;
 
-public class Context: DbContext
+public class Context: IdentityDbContext<AppUser>
 {
+    public Context()
+    { }
+    public Context(DbContextOptions opt) : base(options:opt) // migration için
+    { }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer("server=.;database=CoreBlogDb;integrated security = true; Trust Server Certificate=true");
@@ -23,6 +29,8 @@ public class Context: DbContext
             .WithMany(y => y.WriterReceiver)
             .HasForeignKey(z => z.ReceiverId)
             .OnDelete(DeleteBehavior.ClientSetNull);
+        
+        base.OnModelCreating(modelBuilder);
     }
     public DbSet<About> Abouts { get; set; }
     public DbSet<Blog> Blogs { get; set; }
