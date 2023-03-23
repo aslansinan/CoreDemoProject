@@ -27,7 +27,7 @@
                                     <label class="badge badge-gradient-success">@item.Category.CategoryName</label>
                                 </td>
                                 <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
-                                <td><a asp-action="BlogReadAll" asp-controller="Blog" asp-route-id="@item.BlogID" class="btn btn-dark">Detaylar</a></td>
+                                <td><a asp-action="BlogReadAll" asp-controller="Blog" asp-route-id="@item.BlogId" class="btn btn-dark">Detaylar</a></td>
                             </tr>
                         }
                         </tbody>

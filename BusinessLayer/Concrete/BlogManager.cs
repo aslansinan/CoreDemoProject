@@ -51,7 +51,7 @@ public class BlogManager : IBlogService
 
     public List<Blog> GetBlogById(int id)
     {
-        return _blogDal.GetListAll(x => x.BlogID == id);
+        return _blogDal.GetListAll(x => x.BlogId == id);
     }
 
     public List<Blog> GetBlogListWithCategory()
@@ -61,6 +61,6 @@ public class BlogManager : IBlogService
 
     public List<Blog> GetBlogListWithWriter(int id)
     {
-        return _blogDal.GetListAll(x => x.WriterID == id);
+        return _blogDal.GetListAll(x => x.WriterId == id);
     }
 }

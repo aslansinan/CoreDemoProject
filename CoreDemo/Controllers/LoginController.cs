@@ -22,13 +22,17 @@ public class LoginController : Controller
         var datavalue = c.Writers.FirstOrDefault(x=>x.WriterMail == p.WriterMail && x.WriterPassword == p.WriterPassword);
         if (datavalue != null)
         {
-            var claims = new List<Claim>
+            if (p.WriterMail != null)
             {
-                new Claim(ClaimTypes.Name, p.WriterMail)
-            };
-            var useridentity = new ClaimsIdentity(claims, "a");
-            ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
-            await HttpContext.SignInAsync(principal);
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, p.WriterMail)
+                };
+                var useridentity = new ClaimsIdentity(claims, "a");
+                ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
+                await HttpContext.SignInAsync(principal);
+            }
+
             return RedirectToAction("index", "Dashboard");
         }
         else

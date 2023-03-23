@@ -22,7 +22,7 @@ public class CommentController : Controller
     {
         comment.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
         comment.CommentStatus = true;
-        comment.BlogID = 5;
+        comment.BlogId = 5;
         cm.CommentAdd(comment);
         Response.Redirect("/Blog/BlogReadAll/" + 1);
         return PartialView();

@@ -20,7 +20,7 @@ public class EfBlogRepository : GenericRepository<Blog>, IBlogDal
     {
         using (var c = new Context())
         {
-            return c.Blogs.Include(x => x.Category).Where(x => x.WriterID == id).ToList(); //include eklendi
+            return c.Blogs.Include(x => x.Category).Where(x => x.WriterId == id).ToList(); //include eklendi
         }
     }
 }

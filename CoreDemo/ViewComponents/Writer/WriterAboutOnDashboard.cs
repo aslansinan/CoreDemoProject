@@ -13,7 +13,7 @@ public class WriterAboutOnDashboard : ViewComponent
     public IViewComponentResult Invoke()
     {
         var userMail = User.Identity?.Name;
-        var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID)
+        var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterId)
             .FirstOrDefault();
         var values = writerManager.GetWriterById(writerId);
         return View(values);

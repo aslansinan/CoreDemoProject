@@ -18,7 +18,7 @@
     @foreach (var item in Model)
     {
         <tr>
-            <th>@item.BlogID</th>
+            <th>@item.BlogId</th>
             <td>@item.BlogTitle</td>
             <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
             <td>@item.Category.CategoryName</td>
@@ -33,13 +33,13 @@
                 }
             </td>
             <td>
-                <a asp-action="DeleteBlog" asp-controller="Blog" asp-route-id="@item.BlogID" class="btn btn-danger"
+                <a asp-action="DeleteBlog" asp-controller="Blog" asp-route-id="@item.BlogId" class="btn btn-danger"
                    onclick="return confirm('Silmek istediğine emin misin?')">
                     Sil
                 </a>
             </td>
             <td>
-                <a asp-action="EditBlog" asp-controller="Blog" asp-route-id="@item.BlogID" class="btn btn-warning">Düzenle</a>
+                <a asp-action="EditBlog" asp-controller="Blog" asp-route-id="@item.BlogId" class="btn btn-warning">Düzenle</a>
             </td>
         </tr>
     }

@@ -1,6 +1,5 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
-using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 
 namespace BusinessLayer.Concrete;
@@ -41,6 +40,6 @@ public class WriterManager : IWriterService
 
     public List<Writer> GetWriterById(int id)
     {
-        return _writerDal.GetListAll(x => x.WriterID == id);
+        return _writerDal.GetListAll(x => x.WriterId == id);
     }
 }

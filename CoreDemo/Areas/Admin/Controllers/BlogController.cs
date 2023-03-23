@@ -84,7 +84,7 @@ public class BlogController : Controller
         {
             _list = c.Blogs.Select(x => new BlogModel2
             {
-                ID = x.BlogID,
+                ID = x.BlogId,
                 BlogName = x.BlogTitle
             }).ToList();
         }

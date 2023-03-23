@@ -46,7 +46,7 @@ public class WriterController : Controller
     {
         Context context = new Context(); 
         var userMail = User.Identity?.Name;
-        var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID)
+        var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterId)
             .FirstOrDefault();
         var writervalues = _writerManager.TGetById(writerId);
         return View(writervalues);

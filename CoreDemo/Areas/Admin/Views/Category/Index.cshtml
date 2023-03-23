@@ -18,10 +18,10 @@
     @foreach (var item in Model)
     {
         <tr>
-            <td>@item.CategoryID </td>
+            <td>@item.CategoryId </td>
             <td>@item.CategoryName</td>
             <td>
-                <a href="/Admin/Category/CategoryDelete/@item.CategoryID/" id="DeleteBtn" onclick="return confirm('Silmek İstediğinize emin misiniz');" class="btn btn-primary">Pasif Yap</a>
+                <a href="/Admin/Category/CategoryDelete/@item.CategoryId/" id="DeleteBtn" onclick="return confirm('Silmek İstediğinize emin misiniz');" class="btn btn-primary">Pasif Yap</a>
             </td>
             <td>
                 <a href="#" class="btn btn-info">Aktif Yap</a>

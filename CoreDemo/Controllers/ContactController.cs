@@ -22,6 +22,5 @@ public class ContactController : Controller
         p.ContactStatus = true;
         cm.TAdd(p);
         return RedirectToAction("index", "Blog");
-        return View();
     }
 }
