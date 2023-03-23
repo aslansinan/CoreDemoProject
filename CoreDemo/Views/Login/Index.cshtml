@@ -1,4 +1,5 @@
-﻿@{
+﻿@model UserSignInViewModel
+@{
     ViewData["Title"] = "Login Sayfası";
     Layout = "UserLayout";
 }
@@ -9,20 +10,19 @@
             <div class="login p-5 bg-light mx-auto mw-100">
                 <form method="post">
                     <div class="form-group">
-                        <label for="exampleInputEmail1 mb-2">Email Adresi</label>
-                        <input type="email" class="form-control" name="WriterMail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
-                        <small id="emailHelp" class="form-text text-muted">Mail Adresi paylaşılmaz.</small>
+                        <label for="exampleInputEmail1 mb-2">Kullanıcı Adınız</label>
+                        <input type="text" class="form-control" asp-for="@Model.username" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1 mb-2">Şifre</label>
-                        <input type="password" class="form-control" name="WriterPassword" id="exampleInputPassword1" placeholder="" required="">
+                        <input type="password" class="form-control" asp-for="@Model.password"  id="exampleInputPassword1" placeholder="" required="">
                     </div>
                     <div class="form-check mb-2">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
                         <label class="form-check-label" for="exampleCheck1"> Beni Hatırla</label>
                     </div>
                     <button type="submit" class="btn btn-primary submit mb-4">Giriş Yap</button>
-                    <p><a href="register.html">Hesabım Yok</a></p>
+                    <p><a asp-controller="RegisterUser" asp-action="Index">Hesabım Yok</a></p>
                 </form>
             </div>
         </div>
