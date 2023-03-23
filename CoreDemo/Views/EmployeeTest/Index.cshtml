@@ -1,0 +1,27 @@
+﻿@using CoreDemo.Controllers
+@model List<EmployeeTestController.Class1>
+@{
+    Layout = "AdminLayout";
+}
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Ad Soyad</th>
+        <th>Düzenle</th>
+        <th>Sil</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="#" class="btn btn-outline-success">Düzenle</a></td>
+        </tr>
+    }
+    </tbody>
+</table>
+<a asp-controller="EmployeeTest" asp-action="AddEmployee" class="btn btn-outline-primary">Yeni Çalışan Girişi</a>

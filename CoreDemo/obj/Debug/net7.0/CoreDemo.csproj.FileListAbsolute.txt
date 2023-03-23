@@ -94,3 +94,13 @@ C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\SixLabors.Fonts.dll
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\System.IO.Packaging.dll
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\XLParser.dll
 C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\BlogApiDemo.deps.json
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\BlogApiDemo.runtimeconfig.json
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\BlogApiDemo.exe
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\BlogApiDemo.dll
+C:\projeler\CoreDemo\CoreDemo\bin\Debug\net7.0\BlogApiDemo.pdb

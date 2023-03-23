@@ -1,0 +1,12 @@
+﻿@using CoreDemo.Controllers
+@model EmployeeTestController.Class1
+@{
+    Layout = "AdminLayout";
+}
+
+<form method="post">
+    <label>Çalışan Ad Soyadı</label>
+    <input type="text" asp-for="@Model.Name" class="form-control"/>
+    <br/>
+    <button type="submit" class="btn btn-info">Çalışan Ekle</button>
+</form>
