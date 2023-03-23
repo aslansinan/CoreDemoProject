@@ -1,10 +1,11 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreDemo.Controllers;
-
+[AllowAnonymous]
 public class CommentController : Controller
 {
     private CommentManager cm = new CommentManager(new EfCommentRepository());
@@ -18,7 +19,7 @@ public class CommentController : Controller
         return PartialView();
     }
     [HttpPost]
-    public PartialViewResult PartialAddComment(Comment comment)
+    public IActionResult PartialAddComment(Comment comment)
     {
         comment.CommentDate = DateTime.Parse(DateTime.Now.ToShortDateString());
         comment.CommentStatus = true;

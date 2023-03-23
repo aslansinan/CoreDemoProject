@@ -10,19 +10,21 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CoreDemo.Controllers;
 
-[AllowAnonymous]
+
 public class BlogController : Controller
 {
     BlogManager bm = new BlogManager(new EfBlogRepository());
     CategoryManager cm = new CategoryManager(new EfCategoryRepository());
     Context context = new Context(); 
 
+    [AllowAnonymous]
     public IActionResult index()
     {
         var values = bm.GetBlogListWithCategory();
         return View(values);
     }
 
+    [AllowAnonymous]
     public IActionResult BlogReadAll(int id)
     {
         ViewBag.i = id;

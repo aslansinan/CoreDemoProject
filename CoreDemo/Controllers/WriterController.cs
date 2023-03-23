@@ -45,7 +45,8 @@ public class WriterController : Controller
     public IActionResult WriterEditProfile()
     {
         Context context = new Context(); 
-        var userMail = User.Identity?.Name;
+        var usernName = User.Identity?.Name;
+        var userMail = context.Users.Where(x => x.UserName == usernName).Select(y => y.Email).FirstOrDefault();
         var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterId)
             .FirstOrDefault();
         var writervalues = _writerManager.TGetById(writerId);
