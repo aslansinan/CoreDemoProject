@@ -11,17 +11,17 @@ public class CommentsList: ViewComponent
         {
             new UserComment()
             {
-                ID = 1,
+                Id = 1,
                 UserName = "SİNAN"
             },
             new UserComment()
             {
-                ID = 2,
+                Id = 2,
                 UserName = "Veli"
             },
             new UserComment()
             {
-                ID = 3,
+                Id = 3,
                 UserName = "Ali"
             }
         };
