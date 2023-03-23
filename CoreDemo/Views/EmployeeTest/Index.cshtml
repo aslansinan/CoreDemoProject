@@ -18,8 +18,8 @@
         <tr>
             <td>@item.Id</td>
             <td>@item.Name</td>
-            <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-outline-success">Düzenle</a></td>
+            <td><a asp-controller="EmployeeTest" asp-action="DeleteEmployee" asp-route-id="@item.Id" class="btn btn-outline-danger">Sil</a></td>
+            <td><a sp-controller="EmployeeTest" asp-action="EditEmployee" asp-route-id="@item.Id" class="btn btn-outline-success">Düzenle</a></td>
         </tr>
     }
     </tbody>

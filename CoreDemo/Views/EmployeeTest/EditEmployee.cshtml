@@ -1,0 +1,14 @@
+﻿@model CoreDemo.Controllers.EmployeeTestController.Class1
+@{
+    Layout = "AdminLayout";
+}
+<h1>Api İle Personel Düzenleme Sayfası</h1>
+<form method="post">
+    <label>ID</label>
+    <input type="text" asp-for="@Model.Id" class="form-control"/>
+    <br/>
+    <label>Çalışan Ad Soyadı</label>
+    <input type="text" asp-for="@Model.Name" class="form-control"/>
+    <br/>
+    <button class="btn btn-success">Çalışan Güncelle</button>
+</form>
