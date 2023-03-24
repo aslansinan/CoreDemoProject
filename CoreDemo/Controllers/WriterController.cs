@@ -61,13 +61,6 @@ public class WriterController : Controller
         model.İmageUrl = values.ImageUrl;
         model.UserName = values.UserName;
         return View(model);
-        // Context context = new Context();
-        // var username = User.Identity.Name;
-        // var usermail = context.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
-        // var id = context.Users.Where(x => x.Email == usermail).Select(y => y.Id).FirstOrDefault();
-        // var values = userManager.TGetById(id);
-        // return View(values);
-        //
     }
     [HttpPost]
     public async Task<IActionResult> WriterEditProfile(UserUpdateViewModel userUpdateViewModel)
