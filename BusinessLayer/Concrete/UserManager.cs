@@ -25,7 +25,7 @@ public class UserManager : IUserService
 
     public void TUpdate(AppUser t)
     {
-        throw new NotImplementedException();
+        _UserDal.Update(t);
     }
 
     public List<AppUser> GetList()
