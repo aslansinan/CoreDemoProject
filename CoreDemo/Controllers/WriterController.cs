@@ -6,6 +6,7 @@ using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CoreDemo.Controllers;
@@ -13,6 +14,15 @@ namespace CoreDemo.Controllers;
 public class WriterController : Controller
 {
     private WriterManager _writerManager = new WriterManager(new EfWriterRepository());
+    UserManager userManager = new UserManager(new EfUserRepository());
+
+    private readonly UserManager<AppUser> _userManager;
+
+    public WriterController(UserManager<AppUser> userManager)
+    {
+        _userManager = userManager;
+    }
+
     public IActionResult index()
     {
         return View();
@@ -44,13 +54,18 @@ public class WriterController : Controller
     [HttpGet]
     public IActionResult WriterEditProfile()
     {
-        Context context = new Context(); 
-        var usernName = User.Identity?.Name;
-        var userMail = context.Users.Where(x => x.UserName == usernName).Select(y => y.Email).FirstOrDefault();
-        var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterId)
-            .FirstOrDefault();
-        var writervalues = _writerManager.TGetById(writerId);
-        return View(writervalues);
+        Context context = new Context();
+        var username = User.Identity.Name;
+        var usermail = context.Users.Where(x => x.UserName == username).Select(y => y.Email).FirstOrDefault();
+        var id = context.Users.Where(x => x.Email == usermail).Select(y => y.Id).FirstOrDefault();
+        var values = userManager.TGetById(id);
+        return View(values);
+        // var usernName = User.Identity?.Name;
+        // var userMail = context.Users.Where(x => x.UserName == usernName).Select(y => y.Email).FirstOrDefault();
+        // var writerId = context.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterId)
+        //     .FirstOrDefault();
+        // var writervalues = _writerManager.TGetById(writerId);
+        // return View(writervalues);
     }
     [HttpPost]
     public IActionResult WriterEditProfile(Writer writer)
