@@ -10,21 +10,21 @@ public class GenericRepository<T>:IGenericDal<T> where T:class
     {
         using var c = new Context();
         c.Add(t);
-        c.SaveChanges();
+        c.SaveChangesAsync();
     }
 
     public void Delete(T t)
     {
         using var c = new Context();
         c.Remove(t);
-        c.SaveChanges();
+        c.SaveChangesAsync();
     }
 
     public void Update(T t)
     {
         using var c = new Context();
         c.Update(t);
-        c.SaveChanges();
+        c.SaveChangesAsync();
     }
 
     public List<T> GetListAll()
