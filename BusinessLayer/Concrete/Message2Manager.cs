@@ -15,7 +15,7 @@ public class Message2Manager : IMessage2Service
 
     public void TAdd(Message2 t)
     {
-        throw new NotImplementedException();
+        _message2Dal.Insert(t);
     }
 
     public void TDelete(Message2 t)
@@ -40,6 +40,11 @@ public class Message2Manager : IMessage2Service
 
     public List<Message2> GetInboxListByWriter(int id)
     {
-        return _message2Dal.GetListWithMessageByWriter(id);
+        return _message2Dal.GetInboxWithMessageByWriter(id);
+    }
+
+    public List<Message2> GetSendBoxListByWriter(int id)
+    {
+        return _message2Dal.GetSendWithMessageByWriter(id);
     }
 }

@@ -1,0 +1,17 @@
+﻿@model EntityLayer.Concrete.Message2
+@{
+    Layout = "WriterLayout";
+}
+<h1>Yeni Mesaj Oluşturma</h1>
+<form method="post">
+    <label>Alıcı</label>
+    @* <input type="text" asp-for="@Model.Subject" class="form-control"/> *@
+    <br/>
+    <label>Konu</label>
+    <input type="text" asp-for="@Model.Subject" class="form-control"/>
+    <br/>
+    <label>Mesajınız</label>
+    <input type="text" asp-for="@Model.MessageDetails" class="form-control"/>
+    <br/>
+    <button class="btn btn-success">Mesajı Gönder</button>
+</form>

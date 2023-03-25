@@ -3,13 +3,13 @@
 @{
     Layout = "WriterLayout";
 }
-<h1>Gelen Kutusu</h1>
+<h1>Giden Kutusu</h1>
 <br/>
 <table class="table table-bordered">
     <tr>
         <th>#</th>
         <th>Konu</th>
-        <th>Gönderen</th>
+        <th>Alıcı</th>
         <th>Tarih</th>
         <th>Mesajı Aç</th>
     </tr>
@@ -18,7 +18,7 @@
         <tr>
             <th>@item.MessageId</th>
             <td>@item.Subject</td>
-            <td>@item.SenderUser.WriterName</td>
+            <td>@item.ReceiverUser.WriterName</td>
             <td>@(((DateTime)item.MessageDate).ToString("dd-MMM-yyyy"))</td>
             <td>
                 <a asp-action="MessageDetails" asp-controller="Message" asp-route-id="@item.MessageId" class="btn btn-warning">Mesajı Aç</a>
