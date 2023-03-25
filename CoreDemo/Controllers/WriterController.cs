@@ -70,6 +70,7 @@ public class WriterController : Controller
         values.Email = userUpdateViewModel.Mail;
         values.UserName = userUpdateViewModel.UserName;
         values.ImageUrl = userUpdateViewModel.İmageUrl;
+        values.PasswordHash = _userManager.PasswordHasher.HashPassword(values, userUpdateViewModel.Password);
         var result = await _userManager.UpdateAsync(values);
         return RedirectToAction("index", "Dashboard");
     }

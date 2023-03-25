@@ -6549,24 +6549,8 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\about.html",
-      "PackagePath": "staticwebassets\\web\\about.html"
-    },
-    {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\blog1.html",
       "PackagePath": "staticwebassets\\web\\blog1.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\blog2.html",
-      "PackagePath": "staticwebassets\\web\\blog2.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\blog3.html",
-      "PackagePath": "staticwebassets\\web\\blog3.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\contact.html",
-      "PackagePath": "staticwebassets\\web\\contact.html"
     },
     {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\css\\bootstrap.css",
@@ -6751,10 +6735,6 @@
     {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\register.html",
       "PackagePath": "staticwebassets\\web\\register.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\single.html",
-      "PackagePath": "staticwebassets\\web\\single.html"
     },
     {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\w3layouts-license.txt",

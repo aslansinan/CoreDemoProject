@@ -43,30 +43,9 @@ public class LoginController : Controller
         return View();
     }
 
-    // [HttpPost]
-    // public async Task<IActionResult> index(Writer p)
-    // {
-    //     Context c = new Context();
-    //     var datavalue =
-    //         c.Writers.FirstOrDefault(x => x.WriterMail == p.WriterMail && x.WriterPassword == p.WriterPassword);
-    //     if (datavalue != null)
-    //     {
-    //         if (p.WriterMail != null)
-    //         {
-    //             var claims = new List<Claim>
-    //             {
-    //                 new Claim(ClaimTypes.Name, p.WriterMail)
-    //             };
-    //             var useridentity = new ClaimsIdentity(claims, "a");
-    //             ClaimsPrincipal principal = new ClaimsPrincipal(useridentity);
-    //             await HttpContext.SignInAsync(principal);
-    //         }
-    //
-    //         return RedirectToAction("index", "Dashboard");
-    //     }
-    //     else
-    //     {
-    //         return View();
-    //     }
-    // }
+    public async Task<IActionResult> LogOut()
+    {
+        await _signInManager.SignOutAsync();
+        return RedirectToAction("index", "Login");
+    }
 }
