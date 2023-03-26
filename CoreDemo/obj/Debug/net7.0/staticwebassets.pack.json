@@ -6549,10 +6549,6 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\blog1.html",
-      "PackagePath": "staticwebassets\\web\\blog1.html"
-    },
-    {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\web\\css\\bootstrap.css"
     },
@@ -6697,10 +6693,6 @@
       "PackagePath": "staticwebassets\\web\\images\\top_up.png"
     },
     {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\index.html",
-      "PackagePath": "staticwebassets\\web\\index.html"
-    },
-    {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\web\\js\\bootstrap.js"
     },
@@ -6727,14 +6719,6 @@
     {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\js\\move-top.js",
       "PackagePath": "staticwebassets\\web\\js\\move-top.js"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\login.html",
-      "PackagePath": "staticwebassets\\web\\login.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\register.html",
-      "PackagePath": "staticwebassets\\web\\register.html"
     },
     {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\web\\w3layouts-license.txt",
@@ -7391,62 +7375,6 @@
     {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\package.json",
       "PackagePath": "staticwebassets\\writer\\package.json"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\charts\\chartjs.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\charts\\chartjs.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\forms\\basic_elements.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\forms\\basic_elements.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\icons\\mdi.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\icons\\mdi.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\samples\\blank-page.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\samples\\blank-page.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\samples\\error-404.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\samples\\error-404.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\samples\\error-500.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\samples\\error-500.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\samples\\login.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\samples\\login.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\samples\\register.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\samples\\register.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\tables\\basic-table.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\tables\\basic-table.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\ui-features\\buttons.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\ui-features\\buttons.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\pages\\ui-features\\typography.html",
-      "PackagePath": "staticwebassets\\writer\\pages\\ui-features\\typography.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\partials\\_footer.html",
-      "PackagePath": "staticwebassets\\writer\\partials\\_footer.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\partials\\_navbar.html",
-      "PackagePath": "staticwebassets\\writer\\partials\\_navbar.html"
-    },
-    {
-      "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\partials\\_sidebar.html",
-      "PackagePath": "staticwebassets\\writer\\partials\\_sidebar.html"
     },
     {
       "Id": "C:\\projeler\\CoreDemo\\CoreDemo\\wwwroot\\writer\\screenshot.jpg",
