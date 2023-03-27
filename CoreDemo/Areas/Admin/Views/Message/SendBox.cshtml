@@ -15,7 +15,7 @@
                     <div class="file-manager">
                         <a class="btn btn-block btn-primary compose-mail" href="mail_compose.html">Mesaj Kutusu</a>
                         <div class="space-25"></div>
-                        <h5>Folders</h5>
+                        <h5>Klasörler</h5>
                         <ul class="folder-list m-b-md" style="padding: 0">
                             <li>
                                 <a asp-area="Admin" asp-controller="Message" asp-action="Inbox"> <i class="fa fa-inbox "></i> Gelen Mesajlar <span class="label label-warning float-right">16</span> </a>
@@ -70,7 +70,7 @@
                     </div>
                 </form>
                 <h2>
-                    Gelen Kutusu (0)
+                    Giden Kutusu (0)
                 </h2>
                 <div class="mail-tools tooltip-demo m-t-md">
                     <div class="btn-group float-right">
@@ -106,7 +106,7 @@
                                 <input type="checkbox" class="i-checks">
                             </td>
                             <td class="mail-ontact">
-                                <a href="mail_detail.html">@item.SenderUser.WriterName</a>
+                                <a href="mail_detail.html">@item.ReceiverUser.WriterName</a>
                             </td>
                             <td class="mail-subject">
                                 <a href="mail_detail.html">@item.Subject</a>
