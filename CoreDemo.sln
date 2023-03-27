@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreLayer", "CoreLayer\Core
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogApiDemo", "BlogApiDemo\BlogApiDemo.csproj", "{79D827A1-E190-4F84-973D-568EBD311455}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jwt", "jwt\jwt.csproj", "{A5913BEF-66A1-4696-B939-61B07CC3B631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{79D827A1-E190-4F84-973D-568EBD311455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79D827A1-E190-4F84-973D-568EBD311455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79D827A1-E190-4F84-973D-568EBD311455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5913BEF-66A1-4696-B939-61B07CC3B631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5913BEF-66A1-4696-B939-61B07CC3B631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5913BEF-66A1-4696-B939-61B07CC3B631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5913BEF-66A1-4696-B939-61B07CC3B631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
