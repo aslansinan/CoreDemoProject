@@ -40,12 +40,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcQWRkUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/projeler/CoreDemo/CoreDemo/Areas/Admin/Views/AdminRol/AssignRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcQXNzaWduUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/projeler/CoreDemo/CoreDemo/Areas/Admin/Views/AdminRol/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/projeler/CoreDemo/CoreDemo/Areas/Admin/Views/AdminRol/UpdateRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcVXBkYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projeler/CoreDemo/CoreDemo/Areas/Admin/Views/AdminRol/UserRoleList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xcVXNlclJvbGVMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/projeler/CoreDemo/CoreDemo/Areas/Admin/Views/Blog/BlogListExcel.cshtml]
@@ -94,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/projeler/CoreDemo/CoreDemo/Areas/Admin/Views/Writer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV3JpdGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/projeler/CoreDemo/CoreDemo/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/projeler/CoreDemo/CoreDemo/Views/About/Index.cshtml]
