@@ -3,7 +3,7 @@
     ViewData["Title"] = "Home Page";
     Layout = "AdminLayout";
 }
-<form type="post">
+<form method="post">
     @for (int i = 0; i < Model.Count; i++)
     {
         <div class="form-check">
@@ -13,8 +13,10 @@
             <label class="form-check-label" asp-for="@Model[i].Exists">@Model[i].Name</label>
         </div>
     }
+    <br/>
     <button class="btn btn-info">Değişiklikleri Kaydet</button>
 </form>
 <div>
+    <br/>
     <a href="/Admin/AdminRol/UserRoleList/" class="btn btn-primary">Kullanıcı Listesi</a>
 </div>
