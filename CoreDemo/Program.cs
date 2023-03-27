@@ -24,7 +24,11 @@ builder.Services.AddMvc(config =>
 builder.Services.AddMvc();
 builder.Services.AddAuthentication(
         CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(x => { x.LoginPath = "/Login/index"; });
+    .AddCookie(x =>
+    {
+        x.LoginPath = "/Login/index";
+        x.AccessDeniedPath = "Login/AccessDenied";
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
