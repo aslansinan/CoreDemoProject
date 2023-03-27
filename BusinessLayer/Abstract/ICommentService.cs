@@ -9,4 +9,5 @@ public interface ICommentService : IGenericService<Comment>
     //void CategoryUpdate(Category category);
     List<Comment> GetList(int id);
    // Category GetById(int id);
+   List<Comment> GetCommentWithBlog();
 }

@@ -23,6 +23,11 @@ public class CommentManager :ICommentService
 
     }
 
+    public List<Comment> GetCommentWithBlog()
+    {
+       return _commentDal.GetListWithBlog();
+    }
+
     public void TAdd(Comment t)
     {
         throw new NotImplementedException();
